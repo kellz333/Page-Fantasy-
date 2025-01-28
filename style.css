@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-image: url('Backimage.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 16px; 
+    backdrop-filter: blur(5px);  
+}
+
+
+.login-form {
+    background: rgba(255, 255, 255, 0.9); 
+    padding: 24px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.login-form h2 {
+    text-align: center;
+    margin-bottom: 24px;
+    font-size: 24px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 16px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #333;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+
+.btn-login {
+    width: 100%;
+    padding: 12px;
+    background-color: #ff6347;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-login:hover {
+    background-color: #ff4500;
+}
+
+
+@media (max-width: 480px) {
+    .login-form {
+        padding: 16px;
+    }
+
+    .login-form h2 {
+        font-size: 20px;
+    }
+
+    .form-group input {
+        padding: 10px;
+        font-size: 13px;
+    }
+
+    .social-login {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .social-login a {
+        margin: 8px 0;
+        flex: none;
+    }
+}
+
+
+@media (min-width: 481px) and (max-width: 1024px) {
+    .login-form {
+        padding: 20px;
+    }
+
+    .login-form h2 {
+        font-size: 22px;
+    }
+}
+
+@media (min-width: 1025px) {
+    .login-form {
+        padding: 40px; 
+        max-width: 600px; 
+    }
+
+    .login-form h2 {
+        font-size: 28px; 
+    }
+
+    .form-group input {
+        padding: 16px;  
+        font-size: 16px; 
+    }
+
+    .btn-login {
+        padding: 16px; 
+        font-size: 18px; 
+    }
+
+    .social-login a {
+        padding: 16px; 
+        font-size: 16px; 
+    }
+}
