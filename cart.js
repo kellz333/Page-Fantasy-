@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     const cartButton = document.createElement("button");
-    cartButton.textContent = "🛒 Cart ";
+    cartButton.textContent = " 🛒 ";
     cartButton.id = "cart-btn";
     document.body.appendChild(cartButton);
 
@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
     `;
     document.body.appendChild(cartSidebar);
 
-    let cart = [];
+    let cart = []; 
 
     function updateCart() {
         const cartItems = document.getElementById("cart-items");
@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", function () {
         cart.forEach((item, index) => {
             const li = document.createElement("li");
             li.classList.add("cart-item");
-            li.innerHTML = ${item.name} - ₱${item.price} <button class='remove-item' data-index='${index}' style='color: red; cursor: pointer;'>Remove</button>;
+            li.innerHTML = `${item.name} - ₱${item.price} <button class='remove-item' data-index='${index}' style='color: red; cursor: pointer;'>Remove</button>`;
             cartItems.appendChild(li);
             total += item.price;
         });
