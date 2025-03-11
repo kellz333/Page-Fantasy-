@@ -1,27 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
     background-color: #ffffff;
-    color: #ff6347;
-    margin: 0;
-    padding: 0;
+    color: #333;
 }
 
 header {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    padding: 16px;
-    background-color: #ff6347;
-    color: white;
+    background-color: #ff7f50;
+    padding: 20px;
 }
 
-h1 {
-    text-align: center;
-    background-color: white;
-    color: orangered;
-    font-family: 'Georgia', sans-serif;
-    padding: 10px;
+.logo-title h1 {
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.header-menu {
+    background-color: #ffffff;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.header-menu ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.header-menu ul li {
+    margin: 0 15px;
+}
+
+.header-menu ul li a {
+    text-decoration: none;
+    color: #ff4500;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background-color 0.3s, color 0.3s;
     border-radius: 5px;
+}
+
+.header-menu ul li a:hover {
+    background-color: #ff4500;
+    color: #ffffff;
 }
 
 .category-menu ul {
@@ -148,10 +178,33 @@ h1 {
     border: none;
     padding: 10px;
     border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: bold;
+    width: 100%;
 }
 
 .add-to-cart-btn:hover {
     background-color: #ff4500;
+}
+
+/* Updated Buy Now Button */
+.buy-now-btn {
+    background-color: #ff4500;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.buy-now-btn:hover {
+    background-color: #e03e00;
+    transform: scale(1.05);
 }
 
 .cart-modal, .cart-popup {
