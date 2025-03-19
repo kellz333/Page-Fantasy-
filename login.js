@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
         try {
             await signInWithEmailAndPassword(auth, email, password);
             alert("Login successful!");
-            window.location.href = "home.html"; // Redirect to home page or dashboard
+            window.location.href = "index.html"; // Redirect to home page or dashboard
         } catch (error) {
             alert("Error: " + error.message);
         }
