@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - Page Fantasy</title>
+    <link rel="stylesheet" href="profile.css">
+    <script type="module" src="profile.js"></script>
+</head>
+<body>
+    <div class="profile-container">
+        <div class="profile-header">
+            <h2>Your Profile</h2>
+            <div class="profile-pic">
+                <img id="profilePic" src="default-pic.png" alt="Profile Picture">
+            </div>
+            <input type="file" id="newProfilePic">
+        </div>
+
+        <div class="profile-section">
+            <p>Email: <span id="email"></span></p>
+
+            <label>Gender:</label>
+            <select id="gender">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
+
+        <div class="profile-section">
+            <h3>Address</h3>
+            <label>City:</label>
+            <input type="text" id="city">
+
+            <label>County:</label>
+            <input type="text" id="county">
+
+            <label>Region:</label>
+            <input type="text" id="region">
+
+            <label>Street:</label>
+            <input type="text" id="street">
+
+            <label>Zipcode:</label>
+            <input type="text" id="zipcode">
+        </div>
+
+        <button id="saveChanges">Save Changes</button>
+        <button class="btn logout" onclick="logout()">Logout</button>
+    </div>
+</body>
+</html>
