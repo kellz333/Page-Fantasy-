@@ -8,7 +8,7 @@ onAuthStateChanged(auth, (user) => {
         console.log("User is logged in:", user.email);
     } else {
         // If not logged in, redirect to login page
-        window.location.href = "login.html";
+        window.location.href = "LOGIN.html";
     }
 });
 
